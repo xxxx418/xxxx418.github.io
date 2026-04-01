@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">我的主页</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#resume">简历</a></li>
+                    <li><a href="#portfolio">作品</a></li>
+                    <li><a href="#blog">帖子</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>你好，我是<span class="highlight">[你的名字]</span></h1>
+                    <p class="hero-subtitle">全栈开发者 | 创意设计师 | 技术爱好者</p>
+                    <p class="hero-description">
+                        热爱编程，专注于创建优雅且高效的解决方案。欢迎来到我的个人主页！
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">查看作品</a>
+                        <a href="#contact" class="btn btn-secondary">联系我</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            我是一名充满热情的开发者，拥有丰富的编程经验和创意思维。
+                            我专注于Web开发、移动应用开发和用户体验设计。
+                        </p>
+                        <p>
+                            在过去的几年里，我参与了多个项目的开发，积累了丰富的实战经验。
+                            我相信技术可以改变世界，致力于通过代码创造价值。
+                        </p>
+                        <div class="skills">
+                            <h3>技能专长</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">CSS/SASS</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">数据库</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2 class="section-title">个人简历</h2>
+                <div class="resume-content">
+                    <div class="resume-section">
+                        <h3>工作经历</h3>
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h4>高级软件工程师</h4>
+                                <span class="resume-date">2022 - 至今</span>
+                            </div>
+                            <p class="resume-company">某科技公司</p>
+                            <ul>
+                                <li>负责核心产品的前端架构设计和开发</li>
+                                <li>带领团队完成多个重要项目</li>
+                                <li>优化系统性能，提升用户体验</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h4>软件工程师</h4>
+                                <span class="resume-date">2020 - 2022</span>
+                            </div>
+                            <p class="resume-company">某互联网公司</p>
+                            <ul>
+                                <li>参与Web应用的全栈开发</li>
+                                <li>设计和实现RESTful API</li>
+                                <li>编写自动化测试，提高代码质量</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>教育背景</h3>
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h4>计算机科学与技术 学士</h4>
+                                <span class="resume-date">2016 - 2020</span>
+                            </div>
+                            <p class="resume-company">某大学</p>
+                            <ul>
+                                <li>主修课程：数据结构、算法、操作系统、计算机网络</li>
+                                <li>获得优秀毕业生称号</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>证书与荣誉</h3>
+                        <div class="resume-item">
+                            <ul>
+                                <li>AWS认证解决方案架构师</li>
+                                <li>Google开发者认证</li>
+                                <li>开源项目贡献者</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">我的作品</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="placeholder-image">项目1</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>电商平台</h3>
+                            <p>一个功能完整的电子商务平台，支持商品展示、购物车、支付等功能。</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">查看详情</a>
+                                <a href="#" class="portfolio-link">源代码</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="placeholder-image">项目2</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>任务管理应用</h3>
+                            <p>一个高效的团队协作和任务管理工具，支持实时同步和团队协作。</p>
+                            <div class="portfolio-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>PWA</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">查看详情</a>
+                                <a href="#" class="portfolio-link">源代码</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="placeholder-image">项目3</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>数据可视化平台</h3>
+                            <p>交互式数据分析和可视化工具，支持多种图表类型和实时数据更新。</p>
+                            <div class="portfolio-tags">
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>Flask</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">查看详情</a>
+                                <a href="#" class="portfolio-link">源代码</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">我的帖子</h2>
+                <div class="blog-search">
+                    <input type="text" id="searchInput" placeholder="搜索帖子...">
+                    <button id="searchBtn">搜索</button>
+                </div>
+                <div class="blog-grid" id="blogGrid">
+                    <article class="blog-card">
+                        <div class="blog-date">2024-03-15</div>
+                        <h3>如何构建高性能的React应用</h3>
+                        <p>分享React性能优化的最佳实践和技巧，包括代码分割、懒加载等...</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">2024-03-10</div>
+                        <h3>深入理解JavaScript异步编程</h3>
+                        <p>从回调函数到Promise再到Async/Await，全面解析JavaScript异步编程...</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">2024-03-05</div>
+                        <h3>使用Docker简化开发环境搭建</h3>
+                        <p>介绍Docker的基本概念和实际应用，帮助开发者快速搭建一致的开发环境...</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-date">2024-02-28</div>
+                        <h3>前端工程化实践指南</h3>
+                        <p>探讨前端工程化的各个方面，包括构建工具、代码规范、CI/CD等...</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>联系方式</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+86 123 4567 8900</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>中国，北京</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3>发送消息</h3>
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">消息</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [你的名字]. All rights reserved.</p>
+            <p>使用 GitHub Pages 托管</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
