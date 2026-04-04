@@ -3,103 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>武子淳 ZichunWU - 个人主页</title>
+    <title>武子淳 ZichunWU | AI Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
 <body>
-    <div class="background-animation">
-        <div class="gradient-sphere sphere-1"></div>
-        <div class="gradient-sphere sphere-2"></div>
-        <div class="gradient-sphere sphere-3"></div>
-    </div>
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+    
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
 
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">武子淳 ZichunWU</div>
+                <div class="logo">ZICHUNWU</div>
                 <ul class="nav-menu">
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#portfolio">作品</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#terminal">TERMINAL</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PROJECTS</a></li>
                 </ul>
-                <button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="武子淳">武子淳</h1>
+                </div>
+                <p class="subtitle">// ZICHUNWU // AI DEVELOPER</p>
+                
+                <div class="hero-badges">
+                    <a href="https://wjx.seu.edu.cn/" target="_blank" class="badge badge-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        东南大学吴健雄学院
+                    </a>
+                    <a href="https://cs.seu.edu.cn/" target="_blank" class="badge badge-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                        计算机科学与技术
+                    </a>
+                    <span class="badge badge-accent">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        CLASS OF 2028
+                    </span>
+                </div>
+                
+                <p class="hero-description">
+                    大一新生，非传统意义程序员，热爱技术与创新。<br>
+                    目前专注 <span class="highlight">AI Agent</span> 方向的学习，<br>
+                    探索 Python 与 C++ 的无限可能。
+                </p>
+                
+                <div class="hero-tags">
+                    <span class="tag">AI Agent</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Section -->
+        <section id="terminal" class="terminal-section">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="greeting">你好，我是</span>
-                            <span class="name">武子淳</span>
-                            <span class="english-name">ZichunWU</span>
-                        </h1>
+                <h2 class="section-title">// SYSTEM_INFO</h2>
+                
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                        <span class="terminal-title">zichunwu@ai-lab:~</span>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">whoami</span>
+                        </div>
+                        <div class="terminal-output">武子淳 ZichunWU - AI Developer & Student</div>
                         
-                        <div class="hero-badges">
-                            <a href="https://wjx.seu.edu.cn/" target="_blank" class="badge badge-primary">🎓 东南大学吴健雄学院</a>
-                            <a href="https://cs.seu.edu.cn/" target="_blank" class="badge badge-secondary">💻 计算机科学与技术</a>
-                            <span class="badge badge-accent">🎂 19岁</span>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">cat skills.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <span class="terminal-highlight">[*]</span> AI Agent Development<br>
+                            <span class="terminal-highlight">[*]</span> Python Programming<br>
+                            <span class="terminal-highlight">[*]</span> C++ Development<br>
+                            <span class="terminal-highlight">[*]</span> Computer Science
                         </div>
                         
-                        <p class="hero-description">
-                            大一新生，非传统意义程序员，热爱技术与创新。<br>
-                            目前专注 <span class="highlight-text">AI Agent</span> 方向的学习，
-                            学习ing Python 和 C++ 语言。
-                        </p>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">cat status.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <span class="terminal-success">[+]</span> Currently: Learning & Building<br>
+                            <span class="terminal-success">[+]</span> Status: <span class="terminal-highlight">ACTIVE</span><br>
+                            <span class="terminal-success">[+]</span> Location: Nanjing, China
+                        </div>
                         
-                        <div class="hero-tags">
-                            <span class="tag">🤖 AI Agent</span>
-                            <span class="tag">📧 younorthend@qq.com</span>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">contact --email</span>
+                        </div>
+                        <div class="terminal-output">
+                            <span class="terminal-highlight">→</span> younorthend@qq.com
+                        </div>
+                        
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command cursor">_</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio">
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
             <div class="container">
-                <h2 class="section-title">我的作品</h2>
-                <div class="portfolio-empty">
-                    <div class="empty-icon">🚧</div>
-                    <h3>作品正在建设中...</h3>
-                    <p>这里将展示我的项目作品，敬请期待！</p>
+                <h2 class="section-title">// TECH_STACK</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <span class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-cyan)" stroke-width="1.5">
+                                <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                                <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/>
+                                <circle cx="9" cy="9" r="1" fill="var(--cyber-cyan)"/>
+                                <circle cx="15" cy="9" r="1" fill="var(--cyber-cyan)"/>
+                            </svg>
+                        </span>
+                        <h3 class="skill-name">AI AGENT</h3>
+                        <p class="skill-desc">探索大语言模型与智能代理技术，构建自主决策系统</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card fade-in delay-1">
+                        <span class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-gold)" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </span>
+                        <h3 class="skill-name">PYTHON</h3>
+                        <p class="skill-desc">Python 主要开发语言，用于 AI、数据处理与脚本开发</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card fade-in delay-2">
+                        <span class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-magenta)" stroke-width="1.5">
+                                <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+                                <line x1="12" y1="22" x2="12" y2="15.5"/>
+                                <polyline points="22,8.5 12,15.5 2,8.5"/>
+                                <polyline points="2,15.5 12,8.5 22,15.5"/>
+                                <line x1="12" y1="2" x2="12" y2="8.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="skill-name">C++</h3>
+                        <p class="skill-desc">系统级编程与算法实现，打好计算机科学基础</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 35%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card fade-in delay-3">
+                        <span class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-green)" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </span>
+                        <h3 class="skill-name">WEB DEV</h3>
+                        <p class="skill-desc">前端开发与全栈探索，打造现代化用户体验</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">// PROJECTS</h2>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card fade-in">
+                        <div class="portfolio-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">项目开发中...</h3>
+                            <p class="portfolio-desc">AI Agent 相关项目正在孵化中，敬请期待！</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card fade-in delay-1">
+                        <div class="portfolio-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">技能展示</h3>
+                            <p class="portfolio-desc">持续学习与积累中，每一天都在进步</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card fade-in delay-2">
+                        <div class="portfolio-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <polygon points="12,2 15,8 22,9 17,14 18,21 12,18 6,21 7,14 2,9 9,8"/>
+                            </svg>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">未来规划</h3>
+                            <p class="portfolio-desc">深入 AI 领域，探索更多可能性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-box fade-in">
+                    <h3 class="contact-title">// GET_IN_TOUCH</h3>
+                    <a href="mailto:younorthend@qq.com" class="contact-link">
+                        younorthend@qq.com
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 武子淳 ZichunWU. All rights reserved.</p>
-        </div>
+        <p>
+            <span class="cyber-text">©</span> 2024 ZICHUNWU 
+            <span class="cyber-text">//</span> 
+            ALL SYSTEMS OPERATIONAL
+        </p>
     </footer>
 
     <script>
-        // 主题切换功能
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-        
-        // 检查本地存储中的主题设置
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme === 'dark') {
-            body.setAttribute('data-theme', 'dark');
-            themeToggle.textContent = '☀️';
-        }
-        
-        // 主题切换事件
-        themeToggle.addEventListener('click', () => {
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-                themeToggle.textContent = '🌙';
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-                themeToggle.textContent = '☀️';
+        // ============ PARTICLES SYSTEM ============
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = window.innerWidth < 768 ? 30 : 60;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 20 + 15) + 's';
+                particle.style.animationDelay = (Math.random() * 10) + 's';
+                particle.style.width = (Math.random() * 3 + 1) + 'px';
+                particle.style.height = particle.style.width;
+                
+                // Random colors
+                const colors = ['var(--cyber-cyan)', 'var(--cyber-gold)', 'var(--cyber-magenta)'];
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.boxShadow = `0 0 ${Math.random() * 10 + 5}px ${particle.style.background}`;
+                
+                container.appendChild(particle);
             }
+        }
+
+        // ============ SCROLL ANIMATIONS ============
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            elements.forEach(el => observer.observe(el));
+        }
+
+        // ============ TERMINAL TYPING EFFECT ============
+        function animateTerminal() {
+            const lines = document.querySelectorAll('.terminal-line');
+            lines.forEach((line, index) => {
+                line.style.animationDelay = (index * 0.3) + 's';
+            });
+        }
+
+        // ============ SMOOTH SCROLL ============
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
+
+        // ============ INITIALIZE ============
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            handleScrollAnimations();
+            animateTerminal();
+        });
+
+        // ============ REDUCE MOTION ============
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.particle').forEach(p => {
+                p.style.animation = 'none';
+            });
+        }
     </script>
 </body>
 </html>
