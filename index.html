@@ -21,6 +21,7 @@
                     <li><a href="#home">首页</a></li>
                     <li><a href="#portfolio">作品</a></li>
                 </ul>
+                <button class="theme-toggle" id="themeToggle" title="切换主题">🌙</button>
             </div>
         </nav>
     </header>
@@ -74,5 +75,31 @@
             <p>&copy; 2024 武子淳 ZichunWU. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // 主题切换功能
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // 检查本地存储中的主题设置
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '☀️';
+        }
+        
+        // 主题切换事件
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            }
+        });
+    </script>
 </body>
 </html>
